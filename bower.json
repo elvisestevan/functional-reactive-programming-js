@@ -1,0 +1,18 @@
+{
+  "name": "functional-reactive-programming-js",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Elvis Estevan"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "angular": "^1.5.6",
+    "bootstrap": "^3.3.6",
+    "angular-route": "~1.5.6"
+  },
+  "install": {
+    "path": "public/lib"
+  }
+}

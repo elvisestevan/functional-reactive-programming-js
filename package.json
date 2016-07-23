@@ -1,0 +1,31 @@
+{
+  "name": "functional-reactive-programming-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elvisestevan/functional-reactive-programming-js.git"
+  },
+  "keywords": [
+    "functional",
+    "reactive",
+    "programming",
+    "js",
+    "javascript"
+  ],
+  "author": "Elvis Estevan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elvisestevan/functional-reactive-programming-js/issues"
+  },
+  "homepage": "https://github.com/elvisestevan/functional-reactive-programming-js#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.5"
+  }
+}
