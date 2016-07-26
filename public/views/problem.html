@@ -1,0 +1,17 @@
+<h4>The problem</h4> <p>The problem arises when user is rapidly selecting different values from dropdown and the responses are out of order in which they were requested.</p>
+
+<label for="inputPassword" class="control-label">Pokemon Gender</label>
+
+<select class="form-control" ng-model="gender" ng-change="getPokemons()">
+    <option value="1">Female</option>
+    <option value="2">Male</option>
+</select>
+
+{{pokemons}}
+
+<div class="container pokemon-list">
+    <div class="row well">
+        <div class="col-xs-2"><img src="http://lorempixel.com/100/100/" class="img-circle img-responsive"></div>
+        <div class="col-xs-10"><h3>Pikachu</h3></div>        
+    </div>
+</div>

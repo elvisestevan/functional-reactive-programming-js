@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Functional Reactive Programming</title>
+
+		<link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/custom.css">
+	</head>
+	<body ng-app="pokemonApp">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">Elvis Estevan</a>
+				</div>
+			</div>
+		</nav>
+		<div class="container">		
+			<div class="col-sm-4">
+				<ul class="nav nav-pills nav-stacked" ng-controller="navController">
+                    <li ng-repeat="item in items" ng-class="{ 'active': item.path == states.currentPath }" ng-click="states.currentPath = item.path"><a href="{{item.path}}">{{ item.title }}</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-8">
+				<div ng-view>
+
+				</div>
+			</div>
+		</div>
+        <script type="text/javascript" src="/lib/angular/angular.js"></script>
+        <script type="text/javascript" src="/lib/angular-route/angular-route.js"></script>
+		<script type="text/javascript" src="/js/app.js"></script>
+        <script type="text/javascript" src="/js/controllers/homeController.js"></script>
+        <script type="text/javascript" src="/js/controllers/problemController.js"></script>
+        <script type="text/javascript" src="/js/controllers/howToSolveController.js"></script>
+        <script type="text/javascript" src="/js/controllers/navController.js"></script>
+	</body>
+</html>
