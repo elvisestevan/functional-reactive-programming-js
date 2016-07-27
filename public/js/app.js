@@ -1,5 +1,5 @@
 /*global angular*/
-var app = angular.module('pokemonApp', ['ngRoute']);
+var app = angular.module('marvelApp', ['ngRoute']);
 
 app.config(['$routeProvider', function ($routeProvider) {
     'use strict';

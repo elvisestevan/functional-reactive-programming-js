@@ -1,5 +1,5 @@
 {
-  "name": "functional-reactive-programming-js",
+  "name": "promises-chain-js",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elvisestevan/functional-reactive-programming-js.git"
+    "url": "git+https://github.com/elvisestevan/promises-chain-js.git"
   },
   "keywords": [
     "functional",
@@ -20,9 +20,9 @@
   "author": "Elvis Estevan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/elvisestevan/functional-reactive-programming-js/issues"
+    "url": "https://github.com/elvisestevan/promises-chain-js/issues"
   },
-  "homepage": "https://github.com/elvisestevan/functional-reactive-programming-js#readme",
+  "homepage": "https://github.com/elvisestevan/promises-chain-js#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",

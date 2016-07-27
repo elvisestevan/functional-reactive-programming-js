@@ -1,1 +1,25 @@
-How to solve
+<h4>How to solve</h4> 
+<form class="well">
+    <div class="form-group">
+        <label for="apikey">API Key</label>
+        <input type="text" class="form-control" id="apikey" ng-model="apikey">
+    </div>
+    <div class="form-group">
+        <label for="hash">Hash</label>
+        <input type="text" class="form-control" id="hash" ng-model="hash">
+    </div>
+</form>
+
+<div class="col-xs-12 well" ng-repeat="character in characters">
+    <div class="col-xs-2">
+        <img ng-src="{{pathTumbnail(character)}}" class="img-circle img-responsive">
+    </div>
+    <div class="col-xs-10">
+        <div class="row">
+            <h3>#{{character.order}} {{character.id}} - {{character.name}}</h3>
+        </div>
+        <div class="row">
+            {{character.description}}
+        </div>
+    </div>
+</div>
