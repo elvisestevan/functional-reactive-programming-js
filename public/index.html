@@ -15,9 +15,10 @@
 			</div>
 		</nav>
 		<div class="container">		
+        {{states.currentPath}}
 			<div class="col-sm-3">
 				<ul class="nav nav-pills nav-stacked" ng-controller="navController">
-                    <li ng-repeat="item in items" ng-class="{ 'active': item.path == states.currentPath }" ng-click="states.currentPath = item.path"><a href="{{item.path}}">{{ item.title }}</a></li>
+                    <li ng-repeat="item in items" ng-class="{ 'active': item.path == states.currentPath }" ng-click="states.currentPath = item.path"><a href="/#{{item.path}}">{{ item.title }}</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-9">

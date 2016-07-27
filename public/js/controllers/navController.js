@@ -1,16 +1,16 @@
 /*global app*/
-app.controller('navController', ['$scope', function ($scope) {
+app.controller('navController', ['$scope', '$location', function ($scope, $location) {
     'use strict';
     $scope.states = {};
-    $scope.states.currentPath = '/#/';
+    $scope.states.currentPath = $location.$$path;
     $scope.items = [{
-        path: '/#/',
+        path: '/',
         title: 'Home'
     }, {
-        path: '/#/problem',
+        path: '/problem',
         title: 'The problem'
     }, {
-        path: '/#/howtosolve',
+        path: '/howtosolve',
         title: 'How to solve'
     }];
 }]);
